@@ -18,7 +18,7 @@ We may have to convert Hexed version to a different type, binary to Hexadecimal?
 6, 10, 17
 [LimeWire](https://limewire.com/d/6Dq7N#jIUS2PPhBC)
 
-##Puzzle Hints - Found on Twitter Section
+## Puzzle Hints - Found on Twitter Section
 
 [Hint 1](https://x.com/project52hz/status/1941912212186021997) - Located on Twitter - Stated by Creators
 
