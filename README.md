@@ -6,6 +6,18 @@ Attempting to solve Stage II "The Dance"
 ## Puzzle Riddle - Found on Twitter Project52HZ website
 "The collider is primed. We are getting closer to finding order in the anomaly. There's a hex for everything, and a scientific phenomenon waiting to unfold." - Found on Project52Hz.com - Stated by Creators
 
+## File Thumbprints
+Hexed version W5MOMpCchiHzreSzNTczkc9d - These are shared in common between #10 and #17
+Hexed Bytes 57 35 40 30 4D 70 43 65 68 69 48 7A 72 65 53 7A 4E 54 63 7A 68 63 39 64
+
+MD5 thumbprint 5bac8d4b-16bc-4fa2-8d95-b42fa5c63be2
+
+We may have to convert Hexed version to a different type, binary to Hexadecimal?
+
+##Important Files
+6, 10, 17
+[LimeWire](https://limewire.com/d/6Dq7N#jIUS2PPhBC)
+
 ## Puzzle Hints - Found on Twitter Section
 
 [Hint 1](https://x.com/project52hz/status/1941912212186021997) - Located on Twitter - Stated by Creators
