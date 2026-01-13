@@ -1,0 +1,48 @@
+import math
+
+# Inputs
+google_number = "7427466391"          # seed / numeric backbone
+payload_hex = "5841642895425632"      # hex payload (removed 'f')
+
+# Step 1: Convert payload hex to normalized array (0-1)
+payload_digits = []
+for c in payload_hex:
+    value = int(c, 16)                # hex -> int (0-15)
+    payload_digits.append(value / 16) # normalize to 0-1
+
+# Step 2: Convert google_number to list of digits
+number_digits = [int(d) for d in google_number]
+
+# Step 3: Logistic map function
+def logistic(x, r=3.7427466391):
+    return r * x * (1 - x)
+
+# Step 4: Generate chaotic sequence from payload
+chaotic_sequence = []
+for x in payload_digits:
+    val = x
+    for _ in range(10):               # iterate multiple times to allow chaos
+        val = logistic(val)
+    chaotic_sequence.append(val)
+
+# Step 5: Generate permutation indices using prime-numbered positions
+# First few primes (1-based indexing)
+primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+
+# Map primes to indices in number_digits (wrap if longer)
+perm_indices = [primes[i % len(number_digits)] - 1 for i in range(len(number_digits))]
+
+# Step 6: Apply chaotic sorting to prime indices
+# Sort the prime indices based on corresponding chaotic value
+prime_values = [chaotic_sequence[i % len(chaotic_sequence)] for i in perm_indices]
+sorted_indices = [x for _, x in sorted(zip(prime_values, perm_indices))]
+
+# Step 7: Build the final numeric website name
+final_digits = number_digits.copy()
+for i, idx in enumerate(sorted_indices):
+    final_digits[i % len(number_digits)] = number_digits[idx]
+
+# Join digits into string
+website_name = ''.join(str(d) for d in final_digits)
+
+print("Numeric website name:", website_name)
