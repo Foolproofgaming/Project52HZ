@@ -34,7 +34,7 @@ Hint 3 "Logistics Equation?" - Located on Twitter - Stated by Creators
 
 ## Puzzle Hints - Found on Discord Section
 
-Hint 6 "The one right in the second row is never black." - Located on Reddit - Stated by Creators
+Hint 6 "The one right in the second row is never black." - Located on Discord - Stated by Creators
 
 Hint 7 "Progress on 'The Dance'
 
